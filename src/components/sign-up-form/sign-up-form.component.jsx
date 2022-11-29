@@ -16,8 +16,6 @@ export const SignUpForm = () => {
   const [formFields, setFormFields] = useState(defaultFormFields);
   const { displayName, email, password, confirmPassword } = formFields;
 
-  console.log(formFields);
-
   const resetFormFields = () => {
     setFormFields(defaultFormFields);
   };
@@ -78,6 +76,7 @@ export const SignUpForm = () => {
           onChange={handleChange}
           name="password"
           value={password}
+          autoComplete="on"
         />
 
         <FormInput
@@ -87,6 +86,7 @@ export const SignUpForm = () => {
           onChange={handleChange}
           name="confirmPassword"
           value={confirmPassword}
+          autoComplete="on"
         />
 
         <Button type="submit">Sign Up</Button>

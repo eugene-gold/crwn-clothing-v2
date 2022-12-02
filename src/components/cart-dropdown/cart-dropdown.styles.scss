@@ -26,5 +26,9 @@
   button {
     margin-top: auto;
     font-size: 14px;
+    &:hover {
+      font-size: 13px;
+    }
   }
+
 }

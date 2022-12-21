@@ -5,11 +5,7 @@ import { Authentication } from "./routes/authentication/authentication.component
 import { Shop } from "./shop/shop.component";
 import { Checkout } from "./routes/checkout/checkout.component";
 
-import {
-  createUserDocumentFromAuth,
-  onAuthStateChangedListener,
-} from "./utils/firebase/firebase.utils";
-import { setCurrentUser } from "./store/user/user.action";
+import { checkUserAction } from "./store/user/user.action";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
@@ -17,19 +13,8 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    const unsubscribe = onAuthStateChangedListener(
-      (user) => {
-        if (user) {
-          createUserDocumentFromAuth(user);
-          //переместил внутрь if для возможных ошибок
-          dispatch(setCurrentUser(user));
-        }
-      },
-      [dispatch]
-    );
-
-    return unsubscribe;
-  });
+    dispatch(checkUserAction());
+  }, []);
   return (
     <Routes>
       <Route path="/" element={<Navigation />}>

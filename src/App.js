@@ -5,7 +5,7 @@ import { Authentication } from "./routes/authentication/authentication.component
 import { Shop } from "./shop/shop.component";
 import { Checkout } from "./routes/checkout/checkout.component";
 
-import { checkUserAction } from "./store/user/user.action";
+import { checkUserSession } from "./store/user/user.action";
 import { useDispatch } from "react-redux";
 import { useEffect } from "react";
 
@@ -13,7 +13,7 @@ const App = () => {
   const dispatch = useDispatch();
 
   useEffect(() => {
-    dispatch(checkUserAction());
+    dispatch(checkUserSession());
   }, []);
   return (
     <Routes>

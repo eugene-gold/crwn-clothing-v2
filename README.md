@@ -1,6 +1,6 @@
 # Магазин одежды, React
 
-### Auth - Google SignIN - Firebase
+### Auth - Google SignIn - Firebase
 ### ReactJS
 ### Styled components
 ### Store - Redux/Saga

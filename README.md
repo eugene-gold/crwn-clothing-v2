@@ -1,9 +1,8 @@
 # Магазин одежды, React
 
-##ayth - Google SignIN - Firebase
-##ReactJS
-##Styled components
-## store - Redux/Saga
+### Auth - Google SignIN - Firebase
+### ReactJS
+### Styled components
+### Store - Redux/Saga
 
-посмотреть:
-https://warm-crisp-5889a8.netlify.app/
+### ссылка: https://warm-crisp-5889a8.netlify.app/

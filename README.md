@@ -2,7 +2,8 @@
 
 firebase
 React
-sass
+Styled components
+Redux/Saga
 
-ознакомиться:
+посмотреть:
 https://warm-crisp-5889a8.netlify.app/

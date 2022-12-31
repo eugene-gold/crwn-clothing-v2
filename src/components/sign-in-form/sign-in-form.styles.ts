@@ -1,4 +1,5 @@
 import styled from "@emotion/styled/macro";
+import { device } from "../../variables";
 
 export const SignInContainer = styled.div`
   display: flex;
@@ -6,6 +7,9 @@ export const SignInContainer = styled.div`
   width: 380px;
   h2 {
     margin: 10px 0;
+  }
+  @media ${device.mobile} {
+    width: 100%;
   }
 `;
 

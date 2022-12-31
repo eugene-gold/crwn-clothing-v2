@@ -1,5 +1,6 @@
 import styled from "@emotion/styled/macro";
 import { SpinnerContainer } from "../spinner/spinner.styles";
+import { device } from "../../variables";
 
 export const BaseButton = styled.button`
   min-width: 165px;
@@ -24,6 +25,9 @@ export const BaseButton = styled.button`
     color: black;
     border: 1px solid black;
   }
+  @media ${device.mobile} {
+    font-size: 1.2rem;
+  }
 `;
 
 export const GoogleSignInButton = styled(BaseButton)`
@@ -32,6 +36,9 @@ export const GoogleSignInButton = styled(BaseButton)`
   &:hover {
     background-color: #357ae8;
     border: none;
+  }
+  @media ${device.mobile} {
+    padding: unset;
   }
 `;
 

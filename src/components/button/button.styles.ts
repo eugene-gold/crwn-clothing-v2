@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled/macro";
 import { SpinnerContainer } from "../spinner/spinner.styles";
 
 export const BaseButton = styled.button`

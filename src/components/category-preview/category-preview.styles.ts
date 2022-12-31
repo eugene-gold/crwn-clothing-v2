@@ -1,4 +1,3 @@
-// import styled from "styled-components";
 import styled from "@emotion/styled/macro";
 import { Link } from "react-router-dom";
 import { device } from "../../variables";
@@ -24,6 +23,6 @@ export const Preview = styled.div`
   column-gap: 20px;
   @media ${device.mobile} {
     grid-template-columns: 1fr 1fr;
-    grid-gap: 15px;
+    grid-gap: 1.5rem;
   }
 `;

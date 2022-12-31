@@ -11,7 +11,7 @@ export const NavigationContainer = styled.div`
   @media ${device.mobile} {
     height: 60px;
     padding: 10px;
-    margin-bottom: 20px;
+    margin-bottom: unset;
   }
 `;
 
@@ -43,4 +43,7 @@ export const NavLinks = styled.div`
 export const NavLink = styled(Link)`
   padding: 1rem 1.5rem;
   cursor: pointer;
+  @media ${device.mobile} {
+    font-size: 1.4rem;
+  }
 `;

@@ -1,4 +1,3 @@
-// import styled from "styled-components";
 import { device } from "../../variables";
 import styled from "@emotion/styled/macro";
 
@@ -26,7 +25,7 @@ export const ProductCardContainer = styled.div`
       opacity: 0.9;
       min-width: unset;
       padding: 0 10px;
-      font-size: 12px;
+      font-size: 1.2rem;
     }
   }
   &:hover {
@@ -40,7 +39,7 @@ export const ProductCardContainer = styled.div`
     }
   }
   @media ${device.mobile} {
-    width: 40vw;
+    width: unset;
     &:hover {
       img {
         opacity: unset;
@@ -58,6 +57,9 @@ export const Footer = styled.div`
   display: flex;
   justify-content: space-between;
   font-size: 18px;
+  @media ${device.mobile} {
+    font-size: 1.4rem;
+  }
 `;
 
 export const Name = styled.div`

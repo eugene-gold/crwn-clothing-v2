@@ -1,5 +1,5 @@
-import styled, { css } from "styled-components";
-
+import styled from "@emotion/styled/macro";
+import { css } from "@emotion/react";
 const subColor = "grey";
 const mainColor = "black";
 

@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled/macro";
 
 export const DirectoryContainer = styled.div`
   width: 100%;
